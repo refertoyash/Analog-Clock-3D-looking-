@@ -1,0 +1,124 @@
+/* Resetting CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+ 
+   display: flex;
+   flex-direction: column;
+    
+}
+.container{
+ 
+  
+  
+  justify-content: center;
+  align-items: center;
+ 
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 100vw;
+}
+ 
+   body::before{
+
+ 
+/* background-image: url("https://source.unsplash.com/collection/4878177/1600x900"); */
+ content: "";
+   /* background: url(/bg.jpg)  repeat-y center   ; */
+   /* background: url(https://source.unsplash.com/random) no-repeat center; */
+   background-size: cover;
+   
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 200%;
+
+   width: 100%;
+   z-index: -1;
+   opacity: 0.88;}
+/* Designing outer border radius of clock */
+.outerborder{
+border:2px solid black;
+background-color: black;
+display: flex;
+z-index: 2;
+justify-content: center;
+width:  51vw;
+height: 51vw;
+border-radius: 50%;
+box-shadow: 1vw 1vw 8px #000000a9;
+ 
+position: absolute;
+top: 10%;
+}
+/* This . hands is used to set position of image inside as relative and then clock .hands */
+/* can set position absolute to it   */
+.hands{
+position:relative;
+width:  100%;
+height: 100%;
+display: flex;
+ 
+align-content: center;
+justify-content: center;
+ 
+}
+
+.centerhole{
+   background-color:black;
+   width: 5%;
+   height: 5%;
+   border-radius: 50%;
+   position: absolute;
+   top: 48%;
+z-index: 5;
+}
+ /* Ques= Why we set position relative here */
+ /* Clock hands css */
+ /* Ques = Why here position is set absolute */
+ /* Working of translate function */
+  .hand{
+    position: absolute;
+    border: 1px solid  #d0a9ca;
+    bottom: 49.89%;
+    left: 49.0%;
+   transform-origin: bottom;
+   border-radius: 10px;
+ 
+   /* used to rotate from bottom otherwise default rotation is from center */ 
+ } 
+
+ #seconds  {
+    width: 0.5%;
+    height: 33%;
+    background-color: #ff0000;
+    z-index:2;
+ 
+    /* display: none; */
+ }
+  #minutes  {
+    width: 1%;
+    height: 30%;
+    background-color: #000;
+   
+   
+    /* display: none; */
+ }
+ #hours {
+    width: 1.5%;
+    height: 20%;
+    background-color: #000;
+ } 
+/* Analyse it properly */
+ .img{
+    display: flex;
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+    z-index: 90;
+ }
+ .img{
+    border: 2px solid red;
+ }
